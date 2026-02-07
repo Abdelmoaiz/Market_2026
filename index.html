@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GS Market</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+      /* Reset بسيط */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #6c63ff, #c490ff);
+        color: #333;
+      }
+
+      .body-app {
+        background: #fff;
+        padding: 40px 50px;
+        border-radius: 20px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        width: 350px;
+        text-align: center;
+        position: relative;
+      }
+
+      .body-app h2 {
+        margin-bottom: 25px;
+        font-size: 24px;
+        color: #333;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      form label {
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: 600;
+      }
+
+      input {
+        padding: 12px 15px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        outline: none;
+        transition: 0.3s;
+      }
+
+      input:focus {
+        border-color: #6c63ff;
+        box-shadow: 0 0 5px rgba(108,99,255,0.5);
+      }
+
+      .divButton button {
+        padding: 12px 20px;
+        border: none;
+        border-radius: 10px;
+        background-color: #6c63ff;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .divButton button:hover {
+        background-color: #574dcf;
+      }
+
+      /* الشعار الكبير خلف الصفحة */
+      .marklogo-bg {
+        font-size: 100px;
+        font-weight: 900;
+        color: rgba(0,0,0,0.05);
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  
+  <body dir="rtl">
+    <div class="body-app">
+      <h2>يرجى تسجيل الدخول</h2>
+      <form>
+        <div class="divUsername">
+          <label>اسم المستخدم</label>
+          <input type="text" id="username" placeholder="ادخل اسم المستخدم" />
+        </div>
+        <div class="divPassword">
+          <label>كلمة المرور</label>
+          <input type="password" id="password" placeholder="ادخل كلمة المرور"/>
+        </div>
+        <div class="divButton">
+          <button type="submit">تسجيل الدخول</button>
+        </div>
+      </form>
+      <div class="marklogo-bg">GS</div>
+    </div>
+    
+    <script src="./renderer.js"></script>
+  </body>
+</html>
